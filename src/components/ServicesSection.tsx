@@ -10,7 +10,7 @@ export default function ServicesSection() {
   return (
     <section
       id="services"
-      className="relative bg-[#fbfaf7] dark:bg-slate-950 py-20 sm:py-28 [background-image:linear-gradient(to_right,rgba(180,83,9,0.07)_1px,transparent_1px),linear-gradient(to_bottom,rgba(180,83,9,0.07)_1px,transparent_1px)] dark:[background-image:linear-gradient(to_right,rgba(96,165,250,0.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(96,165,250,0.06)_1px,transparent_1px)] [background-size:44px_44px]"
+      className="relative bg-white dark:bg-[#050b14] py-20 sm:py-28 [background-image:linear-gradient(to_right,rgba(15,23,42,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(15,23,42,0.04)_1px,transparent_1px)] dark:[background-image:linear-gradient(to_right,rgba(147,197,253,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(147,197,253,0.05)_1px,transparent_1px)] [background-size:44px_44px]"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <motion.div
@@ -20,14 +20,14 @@ export default function ServicesSection() {
           transition={{ duration: 0.6 }}
           className="text-center max-w-2xl mx-auto"
         >
-          <div className="flex items-center justify-center gap-3 text-xs font-bold tracking-[0.2em] text-red-600 dark:text-red-500">
-            <span className="h-px w-8 bg-red-600/60 dark:bg-red-500/60" />
+          <div className="flex items-center justify-center gap-3 text-xs font-bold tracking-[0.2em] text-burgundy dark:text-burgundy-dark">
+            <span className="h-px w-8 bg-burgundy/60 dark:bg-burgundy-dark/60" />
             WHAT WE DO
-            <span className="h-px w-8 bg-red-600/60 dark:bg-red-500/60" />
+            <span className="h-px w-8 bg-burgundy/60 dark:bg-burgundy-dark/60" />
           </div>
           <h2 className="mt-4 font-black text-4xl sm:text-5xl tracking-tight">
             <span className="text-slate-900 dark:text-white">OUR </span>
-            <span className="text-red-600 dark:text-red-500">SERVICES</span>
+            <span className="text-burgundy dark:text-burgundy-dark">SERVICES</span>
           </h2>
           <p className="mt-4 text-slate-600 dark:text-slate-400 text-sm sm:text-base">
             Complete roofing solutions for residential and commercial properties
@@ -44,7 +44,7 @@ export default function ServicesSection() {
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
               whileHover={{ y: -6 }}
-              className="group relative overflow-hidden rounded-xl border border-amber-900/10 dark:border-white/10 bg-white dark:bg-slate-900/60 shadow-[0_12px_40px_-24px_rgba(15,23,42,0.45)] dark:shadow-none hover:shadow-lg transition-shadow"
+              className="group relative overflow-hidden rounded-xl border border-slate-200 dark:border-white/10 bg-white dark:bg-[#0b1624]/60 shadow-sm dark:shadow-none hover:shadow-lg transition-shadow"
             >
               <div className="relative h-56 overflow-hidden">
                 <Image
@@ -61,7 +61,7 @@ export default function ServicesSection() {
                     whileInView={{ scale: 1, opacity: 1 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.3 + i * 0.1, type: "spring" }}
-                    className="absolute top-4 right-4 rounded-full bg-red-600 px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-white shadow-lg"
+                    className="absolute top-4 right-4 rounded-full bg-burgundy px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-white shadow-lg"
                   >
                     {service.badge}
                   </motion.span>
@@ -77,7 +77,7 @@ export default function ServicesSection() {
                 </p>
                 <Link
                   href={`/services#${service.slug}`}
-                  className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-red-600 dark:text-red-500"
+                  className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-burgundy dark:text-burgundy-dark"
                 >
                   LEARN MORE
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -96,7 +96,7 @@ export default function ServicesSection() {
         >
           <Link
             href="/services"
-            className="group inline-flex items-center gap-2 rounded-md bg-red-600 px-7 py-3.5 text-sm font-bold text-white hover:bg-red-500 transition-colors"
+            className="group inline-flex items-center gap-2 rounded-md bg-burgundy px-7 py-3.5 text-sm font-bold text-white hover:bg-burgundy-dark transition-colors"
           >
             VIEW ALL SERVICES
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />

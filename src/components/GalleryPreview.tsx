@@ -54,7 +54,7 @@ export default function GalleryPreview() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="bg-[#fbfaf7] dark:bg-slate-950 py-20 sm:py-28">
+    <section className="bg-white dark:bg-[#050b14] py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 1, y: 20 }}
@@ -64,13 +64,13 @@ export default function GalleryPreview() {
           className="flex flex-wrap items-end justify-between gap-4"
         >
           <div>
-            <div className="flex items-center gap-3 text-xs font-bold tracking-[0.2em] text-red-600 dark:text-red-500">
-              <span className="h-px w-8 bg-red-600/60 dark:bg-red-500/60" />
+            <div className="flex items-center gap-3 text-xs font-bold tracking-[0.2em] text-burgundy dark:text-burgundy-dark">
+              <span className="h-px w-8 bg-burgundy/60 dark:bg-burgundy-dark/60" />
               OUR WORK
             </div>
             <h2 className="mt-4 font-black text-4xl sm:text-5xl tracking-tight">
               <span className="text-slate-900 dark:text-white">PROJECT </span>
-              <span className="text-red-600 dark:text-red-500">GALLERY</span>
+              <span className="text-burgundy dark:text-burgundy-dark">GALLERY</span>
             </h2>
           </div>
           <Link

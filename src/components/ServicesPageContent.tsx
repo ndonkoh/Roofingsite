@@ -8,17 +8,17 @@ import { siteConfig, getWhatsappLink } from "@/lib/site-config";
 
 export default function ServicesPageContent() {
   return (
-    <div className="bg-white dark:bg-slate-950">
+    <div className="bg-white dark:bg-[#050b14]">
       {/* Page intro */}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 pb-12 sm:pb-16 text-center animate-fade-up">
-        <div className="flex items-center justify-center gap-3 text-xs font-bold tracking-[0.2em] text-red-600 dark:text-red-500">
-          <span className="h-px w-8 bg-red-600/60 dark:bg-red-500/60" />
+        <div className="flex items-center justify-center gap-3 text-xs font-bold tracking-[0.2em] text-burgundy dark:text-burgundy-dark">
+          <span className="h-px w-8 bg-burgundy/60 dark:bg-burgundy-dark/60" />
           WHAT WE DO
-          <span className="h-px w-8 bg-red-600/60 dark:bg-red-500/60" />
+          <span className="h-px w-8 bg-burgundy/60 dark:bg-burgundy-dark/60" />
         </div>
         <h1 className="mt-4 font-black text-4xl sm:text-5xl lg:text-6xl tracking-tight">
           <span className="text-slate-900 dark:text-white">OUR </span>
-          <span className="text-red-600 dark:text-red-500">SERVICES</span>
+          <span className="text-burgundy dark:text-burgundy-dark">SERVICES</span>
         </h1>
         <p className="mt-4 max-w-xl mx-auto text-slate-600 dark:text-slate-400 text-sm sm:text-base">
           Complete roofing solutions for residential and commercial properties
@@ -36,7 +36,7 @@ export default function ServicesPageContent() {
             whileInView={{ y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.6 }}
-            className={`scroll-mt-28 grid gap-8 lg:grid-cols-2 items-center rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-slate-900/60 shadow-sm dark:shadow-none overflow-hidden ${
+            className={`scroll-mt-28 grid gap-8 lg:grid-cols-2 items-center rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-[#0b1624]/60 shadow-sm dark:shadow-none overflow-hidden ${
               i % 2 === 1 ? "lg:[&>*:first-child]:order-2" : ""
             }`}
           >
@@ -49,7 +49,7 @@ export default function ServicesPageContent() {
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
               {service.badge && (
-                <span className="absolute top-4 right-4 rounded-full bg-red-600 px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-white shadow-lg">
+                <span className="absolute top-4 right-4 rounded-full bg-burgundy px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-white shadow-lg">
                   {service.badge}
                 </span>
               )}
@@ -81,7 +81,7 @@ export default function ServicesPageContent() {
               <div className="mt-8 flex flex-wrap gap-3">
                 <a
                   href={`tel:${siteConfig.phones[0].replace(/\s/g, "")}`}
-                  className="inline-flex items-center gap-2 rounded-md bg-red-600 px-6 py-3 text-sm font-bold text-white hover:bg-red-500 hover:scale-105 transition-all"
+                  className="inline-flex items-center gap-2 rounded-md bg-burgundy px-6 py-3 text-sm font-bold text-white hover:bg-burgundy-dark hover:scale-105 transition-all"
                 >
                   <Phone className="h-4 w-4" />
                   CALL FOR A QUOTE

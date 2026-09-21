@@ -10,7 +10,7 @@ const icons = [ShieldCheck, DollarSign, Clock, HardHat, MapPin, Wrench];
 
 export default function WhyChooseUs() {
   return (
-    <section className="bg-[#f1ede4] dark:bg-slate-900 py-20 sm:py-28">
+    <section className="bg-slate-50 dark:bg-[#050b14] py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 grid gap-12 lg:grid-cols-2 lg:items-center">
         {/* Image side */}
         <motion.div
@@ -19,7 +19,7 @@ export default function WhyChooseUs() {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.6 }}
           whileHover={{ scale: 1.01 }}
-          className="relative rounded-2xl"
+          className="relative"
         >
           <div className="relative h-[420px] sm:h-[480px] rounded-2xl overflow-hidden">
             <Image
@@ -37,7 +37,7 @@ export default function WhyChooseUs() {
           </div>
 
           <div className="absolute bottom-0 left-0 right-0 flex items-center gap-3 bg-slate-950/85 px-5 py-4 rounded-b-2xl">
-            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-red-600">
+            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-burgundy">
               <Award className="h-5 w-5 text-white" />
             </span>
             <div>
@@ -54,13 +54,13 @@ export default function WhyChooseUs() {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.6, delay: 0.1 }}
         >
-          <div className="flex items-center gap-3 text-xs font-bold tracking-[0.2em] text-red-500">
-            <span className="h-px w-8 bg-red-500/60" />
+          <div className="flex items-center gap-3 text-xs font-bold tracking-[0.2em] text-burgundy-dark">
+            <span className="h-px w-8 bg-burgundy-dark/60" />
             WHY CHOOSE US
           </div>
           <h2 className="mt-4 font-black text-4xl sm:text-5xl tracking-tight leading-[1.05]">
             <span className="block text-slate-900 dark:text-white">YOUR ROOF.</span>
-            <span className="block text-red-500">OUR PRIDE.</span>
+            <span className="block text-burgundy-dark">OUR PRIDE.</span>
           </h2>
           <p className="mt-5 text-slate-600 dark:text-slate-400 leading-relaxed max-w-xl">
             At {siteConfig.companyName} {siteConfig.tagline}, every project is
@@ -74,7 +74,7 @@ export default function WhyChooseUs() {
               const Icon = icons[i];
               return (
                 <div key={item.title} className="flex gap-3">
-                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-red-600/15 text-red-500">
+                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-burgundy/15 text-burgundy-dark">
                     <Icon className="h-4.5 w-4.5" />
                   </span>
                   <div>

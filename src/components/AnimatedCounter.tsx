@@ -15,7 +15,10 @@ export default function AnimatedCounter({ value }: { value: string }) {
     if (!isInView) return;
 
     const numberMatch = value.match(/\d+/);
-    if (!numberMatch) return;
+    if (!numberMatch) {
+      setDisplay(value);
+      return;
+    }
     const target = parseInt(numberMatch[0], 10);
     const prefix = value.slice(0, numberMatch.index);
     const suffix = value.slice((numberMatch.index ?? 0) + numberMatch[0].length);

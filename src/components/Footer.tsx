@@ -8,7 +8,7 @@ import SocialLinks from "@/components/SocialLinks";
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-50 dark:bg-slate-900 border-t border-slate-200 dark:border-white/10">
+    <footer className="bg-slate-50 dark:bg-[#050b14] border-t border-slate-200 dark:border-white/10">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 py-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
         {/* Brand */}
         <div>
@@ -40,7 +40,7 @@ export default function Footer() {
         {/* Services */}
         <div>
           <h3 className="flex items-center gap-2 font-bold text-slate-900 dark:text-white text-sm tracking-wide">
-            <span className="h-px w-5 bg-red-600 dark:bg-red-500" />
+            <span className="h-px w-5 bg-burgundy dark:bg-burgundy-dark" />
             SERVICES
           </h3>
           <ul className="mt-4 space-y-2.5">
@@ -50,7 +50,7 @@ export default function Footer() {
                   href={`/services#${service.slug}`}
                   className="flex items-center gap-1.5 text-sm text-slate-600 dark:text-slate-400 hover:text-amber-600 dark:hover:text-amber-400 transition-colors"
                 >
-                  <span className="text-red-600 dark:text-red-500">&rarr;</span>
+                  <span className="text-burgundy dark:text-burgundy-dark">&rarr;</span>
                   {service.title}
                 </Link>
               </li>
@@ -61,7 +61,7 @@ export default function Footer() {
         {/* Quick links */}
         <div>
           <h3 className="flex items-center gap-2 font-bold text-slate-900 dark:text-white text-sm tracking-wide">
-            <span className="h-px w-5 bg-red-600 dark:bg-red-500" />
+            <span className="h-px w-5 bg-burgundy dark:bg-burgundy-dark" />
             QUICK LINKS
           </h3>
           <ul className="mt-4 space-y-2.5">
@@ -71,7 +71,7 @@ export default function Footer() {
                   href={item.href}
                   className="flex items-center gap-1.5 text-sm text-slate-600 dark:text-slate-400 hover:text-amber-600 dark:hover:text-amber-400 transition-colors"
                 >
-                  <span className="text-red-600 dark:text-red-500">&rarr;</span>
+                  <span className="text-burgundy dark:text-burgundy-dark">&rarr;</span>
                   {item.label}
                 </Link>
               </li>
@@ -82,12 +82,12 @@ export default function Footer() {
         {/* Contact */}
         <div>
           <h3 className="flex items-center gap-2 font-bold text-slate-900 dark:text-white text-sm tracking-wide">
-            <span className="h-px w-5 bg-red-600 dark:bg-red-500" />
+            <span className="h-px w-5 bg-burgundy dark:bg-burgundy-dark" />
             CONTACT
           </h3>
           <ul className="mt-4 space-y-4 text-sm">
             <li className="flex items-start gap-2.5 text-slate-600 dark:text-slate-400">
-              <MapPin className="h-4 w-4 mt-0.5 shrink-0 text-red-600 dark:text-red-500" />
+              <MapPin className="h-4 w-4 mt-0.5 shrink-0 text-burgundy dark:text-burgundy-dark" />
               <span>
                 Tema, Greater Accra, Ghana
                 <br />
@@ -95,7 +95,7 @@ export default function Footer() {
               </span>
             </li>
             <li className="flex items-start gap-2.5 text-slate-600 dark:text-slate-400">
-              <Phone className="h-4 w-4 mt-0.5 shrink-0 text-red-600 dark:text-red-500" />
+              <Phone className="h-4 w-4 mt-0.5 shrink-0 text-burgundy dark:text-burgundy-dark" />
               <span>
                 {siteConfig.phones.map((phone) => (
                   <span key={phone} className="block">
@@ -105,13 +105,13 @@ export default function Footer() {
               </span>
             </li>
             <li className="flex items-start gap-2.5 text-slate-600 dark:text-slate-400">
-              <Mail className="h-4 w-4 mt-0.5 shrink-0 text-red-600 dark:text-red-500" />
+              <Mail className="h-4 w-4 mt-0.5 shrink-0 text-burgundy dark:text-burgundy-dark" />
               <a href={`mailto:${siteConfig.email}`} className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">
                 {siteConfig.email}
               </a>
             </li>
             <li className="flex items-start gap-2.5">
-              <Clock className="h-4 w-4 mt-0.5 shrink-0 text-red-600 dark:text-red-500" />
+              <Clock className="h-4 w-4 mt-0.5 shrink-0 text-burgundy dark:text-burgundy-dark" />
               <span>
                 <span className="block font-semibold text-amber-600 dark:text-amber-400">
                   {siteConfig.hours}

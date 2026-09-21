@@ -3,7 +3,7 @@ import { siteConfig } from "@/lib/site-config";
 
 export default function TopBar() {
   return (
-    <div className="w-full bg-red-600 text-white text-xs sm:text-sm">
+    <div className="w-full bg-burgundy text-white text-xs sm:text-sm">
       <div className="mx-auto max-w-7xl px-4 py-2 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 sm:justify-between">
         <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
           {siteConfig.phones.map((phone) => (

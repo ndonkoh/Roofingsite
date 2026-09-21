@@ -111,7 +111,7 @@ export default function GalleryLightbox({
                 </h3>
                 <p className="text-sm text-slate-400">{project.location}</p>
               </div>
-              <span className="shrink-0 rounded-full bg-red-600/20 border border-red-500/30 px-3 py-1 text-[11px] font-bold tracking-wide text-red-400 uppercase">
+              <span className="shrink-0 rounded-full bg-burgundy/20 border border-burgundy-dark/30 px-3 py-1 text-[11px] font-bold tracking-wide text-red-400 uppercase">
                 {project.category}
               </span>
             </div>

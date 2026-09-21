@@ -6,22 +6,17 @@
 
 :root {
   --foreground: #171717;
-  --page-cream: #f7f3eb;
-  color-scheme: light;
-}
-
-.dark {
-  color-scheme: dark;
 }
 
 @theme inline {
   --color-foreground: var(--foreground);
   --font-sans: var(--font-inter);
+  --color-burgundy: #800020;
+  --color-burgundy-dark: #660019;
 }
 
 body {
   font-family: var(--font-inter), Arial, Helvetica, sans-serif;
-  background: var(--page-cream);
 }
 
 /* Smooth color transitions when the theme toggle is used, without making

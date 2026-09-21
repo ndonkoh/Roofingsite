@@ -7,7 +7,7 @@ import { siteConfig, getWhatsappLink } from "@/lib/site-config";
 
 export default function CTASection() {
   return (
-    <section className="relative overflow-hidden bg-red-600 py-20 sm:py-28">
+    <section className="relative overflow-hidden bg-burgundy py-20 sm:py-28">
       {/* Diagonal stripe pattern */}
       <div
         className="absolute inset-0 opacity-20"
@@ -43,7 +43,7 @@ export default function CTASection() {
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <a
               href={`tel:${siteConfig.phones[0].replace(/\s/g, "")}`}
-              className="inline-flex items-center gap-2 rounded-md bg-white px-6 py-3.5 text-sm font-bold text-red-600 hover:bg-slate-100 hover:scale-105 transition-all"
+              className="inline-flex items-center gap-2 rounded-md bg-white px-6 py-3.5 text-sm font-bold text-burgundy hover:bg-slate-100 hover:scale-105 transition-all"
             >
               <Phone className="h-4 w-4" />
               {siteConfig.phones[0]}
@@ -59,7 +59,7 @@ export default function CTASection() {
             </a>
             <Link
               href="/contact"
-              className="group inline-flex items-center gap-2 rounded-md border-2 border-white px-6 py-3.5 text-sm font-bold text-white hover:bg-white hover:text-red-600 hover:scale-105 transition-all"
+              className="group inline-flex items-center gap-2 rounded-md border-2 border-white px-6 py-3.5 text-sm font-bold text-white hover:bg-white hover:text-burgundy hover:scale-105 transition-all"
             >
               CONTACT FORM
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />

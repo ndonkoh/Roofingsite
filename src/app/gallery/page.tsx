@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function GalleryPage() {
   return (
-    <main className="relative bg-white dark:bg-slate-950">
+      <main className="relative bg-white dark:bg-[#050b14]">
       <TopBar />
       <Header variant="solid" />
       <div className="pt-10">

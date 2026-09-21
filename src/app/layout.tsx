@@ -22,8 +22,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${inter.variable} h-full antialiased`}
       suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col bg-white dark:bg-slate-950 text-slate-900 dark:text-white">
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
+        <body className="min-h-full flex flex-col bg-white dark:bg-[#050b14] text-slate-900 dark:text-white">
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
           {children}
         </ThemeProvider>
       </body>

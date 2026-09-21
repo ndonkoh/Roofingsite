@@ -1,6 +1,6 @@
 export const stats = [
   { value: "500+", label: "Projects Completed", highlighted: true },
-  { value: "5+", label: "Years Experience" },
+  { value: "13+", label: "Years Experience" },
   { value: "100%", label: "Client Satisfaction" },
   { value: "24/7", label: "Always Available" },
 ];

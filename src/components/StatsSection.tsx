@@ -23,10 +23,10 @@ export default function StatsSection() {
           transition={{ duration: 0.6 }}
           className="text-center max-w-2xl mx-auto"
         >
-          <div className="flex items-center justify-center gap-3 text-xs font-bold tracking-[0.2em] text-red-500">
-            <span className="h-px w-8 bg-red-500/60" />
+          <div className="flex items-center justify-center gap-3 text-xs font-bold tracking-[0.2em] text-burgundy-dark">
+            <span className="h-px w-8 bg-burgundy-dark/60" />
             OUR TRACK RECORD
-            <span className="h-px w-8 bg-red-500/60" />
+            <span className="h-px w-8 bg-burgundy-dark/60" />
           </div>
           <h2 className="mt-4 font-black text-4xl sm:text-5xl tracking-tight">
             <span className="text-white">NUMBERS THAT </span>

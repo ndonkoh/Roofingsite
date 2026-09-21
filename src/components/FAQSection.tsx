@@ -10,7 +10,7 @@ export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="bg-[#f5f1e9] dark:bg-slate-950 py-20 sm:py-28">
+    <section className="bg-white dark:bg-[#050b14] py-20 sm:py-28">
       <div className="mx-auto max-w-3xl px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 1, y: 20 }}
@@ -19,14 +19,14 @@ export default function FAQSection() {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <div className="flex items-center justify-center gap-3 text-xs font-bold tracking-[0.2em] text-red-600 dark:text-red-500">
-            <span className="h-px w-8 bg-red-600/60 dark:bg-red-500/60" />
+          <div className="flex items-center justify-center gap-3 text-xs font-bold tracking-[0.2em] text-burgundy dark:text-burgundy-dark">
+            <span className="h-px w-8 bg-burgundy/60 dark:bg-burgundy-dark/60" />
             FAQ
-            <span className="h-px w-8 bg-red-600/60 dark:bg-red-500/60" />
+            <span className="h-px w-8 bg-burgundy/60 dark:bg-burgundy-dark/60" />
           </div>
           <h2 className="mt-4 font-black text-4xl sm:text-5xl tracking-tight">
             <span className="text-slate-900 dark:text-white">GOT </span>
-            <span className="text-red-600 dark:text-red-500">QUESTIONS?</span>
+            <span className="text-burgundy dark:text-burgundy-dark">QUESTIONS?</span>
           </h2>
           <p className="mt-4 text-slate-600 dark:text-slate-400 text-sm sm:text-base">
             Everything you need to know about our roofing services in Ghana.
@@ -43,7 +43,7 @@ export default function FAQSection() {
                 whileInView={{ y: 0 }}
                 viewport={{ once: true, margin: "-40px" }}
                 transition={{ duration: 0.4, delay: i * 0.05 }}
-                className="rounded-lg border border-slate-200 dark:border-white/10 bg-white dark:bg-slate-900/60 shadow-sm dark:shadow-none overflow-hidden"
+                className="rounded-lg border border-slate-200 dark:border-white/10 bg-white dark:bg-[#0b1624]/60 shadow-sm dark:shadow-none overflow-hidden"
               >
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : i)}

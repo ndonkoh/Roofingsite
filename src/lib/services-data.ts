@@ -56,17 +56,17 @@ export const services: Service[] = [
     ],
   },
   {
-    slug: "gutter-systems",
-    title: "Gutter Systems",
+    slug: "hidden-roofing",
+    title: "Hidden Roofing",
     shortDescription:
-      "Professional rain gutter installation and repair. Protect your home's foundation with proper water drainage systems.",
+      "Sleek parapet-style roofing with the gutter and drainage built in and out of sight, for a clean, modern roofline with no visible gutter or downpipe.",
     fullDescription:
-      "Ghana's rains move fast and heavy. A properly fitted gutter system carries that water away from your walls and foundation instead of pooling against them. We install and repair gutters as part of a new roof or as a standalone job.",
-    image: "/photos/roofgutter.jpg",
+      "Hidden roofing tucks the drainage system behind a parapet wall instead of an exposed gutter, giving the building a clean, uninterrupted roofline while still channelling heavy rain safely away. It's a popular choice for modern commercial and residential builds across Ghana that want the drainage handled without it being on show.",
+    image: "/photos/service-hidden-roofing.jpg",
     features: [
-      "Rain gutter installation and repair",
-      "Downpipe and drainage fitting",
-      "Foundation water-damage prevention",
+      "Concealed box gutter behind a parapet wall",
+      "Clean, modern roofline with no visible gutter",
+      "Built to handle Ghana's heavy seasonal rainfall",
     ],
   },
 ];

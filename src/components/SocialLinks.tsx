@@ -33,9 +33,9 @@ export default function SocialLinks({ className = "" }: { className?: string }) 
           target="_blank"
           rel="noopener noreferrer"
           aria-label={label}
-          className="flex h-9 w-9 items-center justify-center rounded-full bg-slate-200 dark:bg-white/10 text-slate-700 dark:text-white hover:bg-amber-400 hover:text-slate-950 hover:scale-110 transition-all"
+          className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-200 dark:bg-white/10 text-slate-700 dark:text-white hover:bg-amber-400 hover:text-slate-950 hover:scale-110 transition-all"
         >
-          {Icon ? <Icon className="h-4 w-4" /> : <span className="text-xs font-bold">W</span>}
+          {Icon ? <Icon className="h-5 w-5" /> : <span className="text-sm font-bold">W</span>}
         </a>
       ))}
     </div>

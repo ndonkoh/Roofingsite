@@ -10,16 +10,16 @@ export default function GalleryPageContent() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <div className="bg-white dark:bg-slate-950">
+    <div className="bg-white dark:bg-[#050b14]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 pb-12 sm:pb-16 text-center animate-fade-up">
-        <div className="flex items-center justify-center gap-3 text-xs font-bold tracking-[0.2em] text-red-600 dark:text-red-500">
-          <span className="h-px w-8 bg-red-600/60 dark:bg-red-500/60" />
+        <div className="flex items-center justify-center gap-3 text-xs font-bold tracking-[0.2em] text-burgundy dark:text-burgundy-dark">
+          <span className="h-px w-8 bg-burgundy/60 dark:bg-burgundy-dark/60" />
           OUR WORK
-          <span className="h-px w-8 bg-red-600/60 dark:bg-red-500/60" />
+          <span className="h-px w-8 bg-burgundy/60 dark:bg-burgundy-dark/60" />
         </div>
         <h1 className="mt-4 font-black text-4xl sm:text-5xl lg:text-6xl tracking-tight">
           <span className="text-slate-900 dark:text-white">PROJECT </span>
-          <span className="text-red-600 dark:text-red-500">GALLERY</span>
+          <span className="text-burgundy dark:text-burgundy-dark">GALLERY</span>
         </h1>
         <p className="mt-4 max-w-xl mx-auto text-slate-600 dark:text-slate-400 text-sm sm:text-base">
           A look at completed residential, commercial, and estate roofing

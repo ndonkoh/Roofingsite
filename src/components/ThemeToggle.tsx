@@ -1,17 +1,18 @@
 "use client";
 
-import { useSyncExternalStore } from "react";
+import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import { motion } from "framer-motion";
 import { Sun, Moon } from "lucide-react";
 
 export default function ThemeToggle({ className = "" }: { className?: string }) {
   const { resolvedTheme, setTheme } = useTheme();
-  const mounted = useSyncExternalStore(
-    () => () => {},
-    () => true,
-    () => false
-  );
+  const [mounted, setMounted] = useState(false);
+
+  // Avoid rendering theme-dependent UI until mounted, since the server
+  // can't know the visitor's stored preference (prevents a hydration
+  // mismatch flash between light/dark icons).
+  useEffect(() => setMounted(true), []);
 
   const isDark = mounted && resolvedTheme === "dark";
 

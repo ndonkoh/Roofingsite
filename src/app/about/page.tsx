@@ -6,6 +6,7 @@ import FloatingWhatsapp from "@/components/FloatingWhatsapp";
 import AboutPageContent from "@/components/AboutPageContent";
 import StatsSection from "@/components/StatsSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
+import TeamUniformSection from "@/components/TeamUniformSection";
 import CTASection from "@/components/CTASection";
 
 export const metadata: Metadata = {
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <main className="relative bg-white dark:bg-slate-950">
+      <main className="relative bg-white dark:bg-[#050b14]">
       <TopBar />
       <Header variant="solid" />
       <div className="pt-10">
@@ -23,6 +24,7 @@ export default function AboutPage() {
       </div>
       <StatsSection />
       <WhyChooseUs />
+      <TeamUniformSection />
       <CTASection />
       <Footer />
       <FloatingWhatsapp />

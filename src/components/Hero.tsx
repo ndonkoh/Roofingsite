@@ -1,10 +1,9 @@
-import { MessageCircle, CheckCircle2, MapPin } from "lucide-react";
-import Link from "next/link";
-import { getWhatsappLink } from "@/lib/site-config";
+import { Mail, MessageCircle, CheckCircle2, MapPin } from "lucide-react";
+import { siteConfig, getWhatsappLink } from "@/lib/site-config";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[92vh] w-full overflow-hidden flex items-center bg-[#f7f3eb] dark:bg-slate-950">
+    <section className="relative min-h-[92vh] w-full overflow-hidden flex items-center">
       {/* Background photo */}
       <div
         className="absolute inset-0 bg-cover bg-center"
@@ -13,45 +12,47 @@ export default function Hero() {
         }}
       />
 
-      <div className="absolute inset-0 bg-gradient-to-r from-[#f7f3eb]/70 via-[#f7f3eb]/35 to-[#f7f3eb]/0 dark:from-slate-950/90 dark:via-blue-950/70 dark:to-blue-900/30" />
-      <div className="absolute inset-0 bg-gradient-to-t from-[#f7f3eb]/20 via-transparent to-white/0 dark:from-slate-950/70 dark:via-transparent dark:to-blue-950/40" />
+      {/* Blue-toned scrim instead of plain black, darker on the left for text contrast */}
+      <div className="absolute inset-0 bg-gradient-to-r from-white/65 via-white/40 to-white/15 dark:from-[#050b14]/90 dark:via-[#050b14]/70 dark:to-[#050b14]/30" />
+      <div className="absolute inset-0 bg-gradient-to-t from-white/35 via-transparent to-white/20 dark:from-[#050b14]/70 dark:via-transparent dark:to-[#050b14]/40" />
 
       <div className="relative z-10 mx-auto max-w-7xl w-full px-4 sm:px-6 pt-28 pb-16">
         <div className="max-w-2xl">
           <div
-            className="animate-fade-up inline-flex items-center gap-2 rounded-full bg-red-600 px-4 py-1.5 text-xs font-bold text-amber-200 mb-6 shadow-lg shadow-red-900/15"
+            className="animate-fade-up inline-flex items-center gap-2 rounded-full bg-burgundy/90 px-4 py-1.5 text-xs font-bold text-white mb-6"
             style={{ animationDelay: "0s" }}
           >
             <MapPin className="h-3.5 w-3.5" />
             Ghana&apos;s Premier Roofing Specialists
           </div>
 
-          <h1 className="font-black leading-[0.9] tracking-tight">
+          <h1 className="font-black leading-[0.95] tracking-tight text-5xl sm:text-6xl lg:text-7xl">
             <span
-              className="animate-fade-up block text-lg sm:text-xl lg:text-2xl font-extrabold tracking-[0.28em] text-slate-700 dark:text-slate-200"
+              className="animate-fade-up block text-slate-900 dark:text-white"
               style={{ animationDelay: "0.1s" }}
             >
-              BUILT TO
+              BUILT ON
             </span>
             <span
-              className="animate-fade-up mt-2 block text-6xl sm:text-7xl lg:text-8xl text-red-600 dark:text-red-500"
+              className="animate-fade-up block text-burgundy dark:text-burgundy-dark"
               style={{ animationDelay: "0.2s" }}
             >
-              LAST.
+              TRUST,
             </span>
             <span
-              className="animate-fade-up block text-5xl sm:text-6xl lg:text-7xl text-amber-500 dark:text-amber-400"
+              className="animate-fade-up block text-amber-600 dark:text-amber-400"
               style={{ animationDelay: "0.3s" }}
             >
-              LAST
-            </span>
-            <span
-              className="animate-fade-up mt-3 block text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-[0.08em] text-slate-800 dark:text-slate-200"
-              style={{ animationDelay: "0.4s" }}
-            >
-              FOREVER.
+              BACKED BY
             </span>
           </h1>
+
+          <p
+            className="animate-fade-up mt-6 text-3xl sm:text-4xl font-extrabold text-slate-700 dark:text-slate-200 tracking-wide"
+            style={{ animationDelay: "0.4s" }}
+          >
+            QUALITY.
+          </p>
 
           <p
             className="animate-fade-up mt-4 max-w-lg text-slate-700 dark:text-slate-200/90 text-base sm:text-lg leading-relaxed"
@@ -62,7 +63,7 @@ export default function Hero() {
           </p>
 
           <ul
-            className="animate-fade-up mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold text-amber-700 dark:text-amber-300"
+            className="animate-fade-up mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold text-slate-700 dark:text-slate-300"
             style={{ animationDelay: "0.6s" }}
           >
             {["Durable Quality", "Affordable Prices", "Residential & Commercial"].map(
@@ -79,18 +80,19 @@ export default function Hero() {
             className="animate-fade-up mt-8 flex flex-wrap gap-3"
             style={{ animationDelay: "0.7s" }}
           >
-            <Link
+            <a
               href="/contact"
-              className="inline-flex items-center gap-2 rounded-md bg-red-600 px-6 py-3 text-sm font-bold text-white hover:bg-red-500 hover:scale-105 transition-all"
+              className="inline-flex items-center gap-2 rounded-md bg-burgundy px-6 py-3 text-sm font-bold text-white hover:bg-burgundy-dark hover:scale-105 transition-all"
             >
+              <Mail className="h-4 w-4" />
               CONTACT FORM
-            </Link>
-            <Link
+            </a>
+            <a
               href="/services"
-              className="inline-flex items-center gap-2 rounded-md border-2 border-amber-500 px-6 py-3 text-sm font-bold text-amber-700 dark:text-amber-400 hover:bg-amber-400 hover:text-slate-950 hover:scale-105 transition-all"
+              className="inline-flex items-center gap-2 rounded-md border-2 border-slate-900 dark:border-white px-6 py-3 text-sm font-bold text-slate-900 dark:text-white hover:bg-slate-900 hover:text-white dark:hover:bg-white dark:hover:text-slate-950 hover:scale-105 transition-all"
             >
               OUR SERVICES
-            </Link>
+            </a>
             <a
               href={getWhatsappLink()}
               target="_blank"
